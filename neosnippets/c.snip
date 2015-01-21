@@ -75,8 +75,7 @@ abbr        enum {}
 
 # hard-tab is necessary; C indent doesn't support this.
 snippet main
-	int main(int argc, char const* argv[])
-	{
+	int main(int argc, const char* argv[]) {
 		${0:TARGET}
 		return 0;
 	}
@@ -136,8 +135,7 @@ alias size
 
 snippet helloworld
     #include <stdio.h>
-    int main(int argc, char const* argv[])
-    {
+    int main(int argc, const char* argv[]) {
         puts("hello, world!");
         return 0;
     }
